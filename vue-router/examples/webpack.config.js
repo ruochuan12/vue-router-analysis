@@ -21,6 +21,9 @@ module.exports = {
     return entries
   }, {}),
 
+  // 便于调试
+  devtool: 'source-map',
+
   output: {
     path: path.join(__dirname, '__build__'),
     filename: '[name].js',
