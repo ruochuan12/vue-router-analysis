@@ -6,6 +6,8 @@ import VueRouter from 'vue-router'
 // and injects $router and $route to all router-enabled child components
 Vue.use(VueRouter)
 
+console.log(VueRouter, 'VueRouter')
+
 // 2. Define route components
 const Home = { template: '<div>home</div>' }
 const Foo = { template: '<div>foo</div>' }
@@ -23,6 +25,8 @@ const router = new VueRouter({
     { path: '/é', component: Unicode }
   ]
 })
+
+console.log(router, 'router')
 
 // 4. Create and mount root instance.
 // Make sure to inject the router.
